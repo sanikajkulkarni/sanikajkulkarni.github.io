@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+
+nav {
+    height: 80px;
+    background: #7FC1C6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+    color:#615151;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #615151;
+    padding: 0 1.5rem;
+}
+
+.welcome-msg {
+    background: linear-gradient(180deg, #7FC1C6 21.48%, #FFF9F2 100%);
+}
+
+.welcome-msg-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #4D4242;
+    padding: 0rem 2rem;
+
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-left h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #FFF9F2;
+    background: #4D4242;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    color: rgb(97, 81, 81);
+    background: rgba(97, 81, 81, .3);
+    cursor: pointer;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+/* .welcome-img{
+
+} */
+
+@media screen and (max-width: 768px) {
+    .welcome-msg-container {
+        grid-template-columns: 1fr;
+    }   
+}
+
+/* Hobbies Styling */
+
+.hobbies{
+    background: #FFF9F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+    color:#4D4242;
+}
+
+.hobbies h1{
+     color: #4D4242;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.hobbies_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.hobbies_card {
+    margin: 10px;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #4D4242;
+    background: #7FC1C6
+}
+
+.hobbies_card h2 {
+    text-align: center;
+}
+
+.hobbies_card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    .hobbies_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hobbies_wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Projects */
+
+.main{
+    background: linear-gradient(180deg, #FFF9F2 21.48%, #E2A47E 100%);
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color:#4D4242;
+}
+
+.main_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+
+.main h1{
+    color: #4D4242;
+   margin-bottom: 5rem;
+   font-size: 2.5rem;
+}
+
+.main_wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   align-items: center;
+   justify-content: center;
+}
+
+.main_card {
+   margin: 10px;
+   height: 300px;
+   width: 400px;
+   padding: 0 15px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #4D4242;
+   background: #7FC1C6;
+}
+
+.main_card h2 {
+   text-align: center;
+}
+
+.main_card p {
+   text-align: center;
+   margin-top: 24px;
+   font-size: 20px;
+   
+}
+
+img{
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+   .main_wrapper {
+       grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .main_wrapper {
+       grid-template-columns: 1fr;
+   }
+}
