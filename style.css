@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -240,3 +241,14 @@ img{
        grid-template-columns: 1fr;
    }
 }
+
+/* Contact Me */
+
+
+
+.contact_me{
+    background: #E2A47E;
+    width: 100%;
+    padding: 50px;
+}
+
